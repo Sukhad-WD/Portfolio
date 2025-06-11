@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="portfolio.css" />
+
+    <title>Welcome</title>
+  </head>
+  <body>
+    <div class="header">
+      <!-- Empty div to balance the layout -->
+      <div></div>
+
+      <!-- Navigation at top right -->
+      <div class="nav-container">
+        <div class="nav-row">
+          <a href="#">Home</a>
+          <a href="#">Services</a>
+        </div>
+        <div class="nav-row">
+          <a href="#">AboutMe</a>
+          <a href="#">Contact</a>
+        </div>
+      </div>
+    </div>
+    <div class="content">
+      <div class="row1">
+        <img src="portimg/Myimg.png" />
+      </div>
+
+      <h1 class="centered-content">
+        HI EVERYONE,<br />
+        MY NAME IS SUKHAD MEHROTRA A <br />WEB DEVELOPER...<br />
+
+        <a href="#" type="button" class="cta"
+          >PLEASE DO VISIT MY PROFILE AND HAVE FUN</a
+        >
+      </h1>
+    </div>
+    <div id="AboutMe">
+      <div class="container">
+        <div class="row">
+          <h1 class="subheading">About Me</h1>
+          <p>
+            "I'm a budding web designer with a passion for creating clean,
+            user-friendly websites. I'm actively learning modern design<br>
+            principles and front-end development (like HTML, CSS, and
+            JavaScript) to build responsive sites that look great on any device.<br>
+            Eager to collaborate and grow my skills through real projects!"
+          </p>
+          <div class="tab-visit">
+              <p class="tab-links active-links" onclick="opentab('skills')"> Skills </p>
+              <p class="tab-links" onclick="opentab('experience')"> Experience </p>
+              <p class="tab-links" onclick="opentab('education')"> Education </p>
+              
+
+          </div>
+          
+          <div class="tab-content active-content" id="skills">
+            <ul>
+              <li>
+                <span>Web Designing</span><br>
+                    Critical Thinking
+    
+              </li>
+              <li>
+                <span>DSA (in c and c++)</span><br>
+                2D Game Development
+              </li>
+              <li>
+                <span>DBMS (Oracle)</span> <br>
+                PYTHON
+                <br>
+
+                </li>
+                </ul>
+          </div>
+
+          <div class="tab-content" id="experience">
+            <ul>
+            <li>
+            <span>N/A</span>
+            </li>
+            </ul>
+          </div>
+
+          <div class="tab-content" id="education">
+            <ul>
+              <li>
+              .B.TECH(COMPUTER SCIENCE AND ENGINEERING),Kalinga Institute Of Industrial Technology(In progress)<br>,BHUBHANESHWAR.
+                  </li>
+                  </ul>
+          </div>
+          
+
+
+
+
+
+        </div>
+      </div>
+    </div>
+    
+            <script>
+                var tablinks=document.getElementsByClassName("tab-links");
+                var tabcontent=document.getElementsByClassName("tab-content");
+
+                function opentab(tabname){
+                    for(tabl of tablinks){
+                      tabl.classList.remove("active-links");
+                    }
+                      for(tabc of tabcontent){
+                        tabc.classList.remove("active-content");
+                      }
+                      event.currentTarget.classList.add("active-links");
+                      document.getElementById(tabname).classList.add("active-content");
+                }
+
+
+            </script>
+  </body>
+</html>
