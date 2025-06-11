@@ -1,0 +1,48 @@
+
+.top{
+    text-shadow:rgb(172, 56, 56);
+    font-style:italic;
+    text-align:center;
+    font-size:200px;
+}
+.container
+{
+    display:inline-block;
+}
+body{
+    background-color:rgb(239, 212, 39);
+}
+.drum{
+    outline:1rem solid rgb(57, 109, 67);
+    font-size:40pt;
+    color:black;
+    text-align:center;
+    margin:10px;
+    background-color:rgb(223, 219, 226);
+    width:200px;
+    height:200px;
+}
+.l{
+    background-image:url("images/d4.png");
+    }
+    .e{
+      background-image:url("images/d2.png");
+    }
+    .t{
+      background-image:url("images/d6.png");
+    }
+    .s{
+      background-image:url("images/d1.png");
+    }
+    .f{
+      background-image:url("images/d5.png");
+    }
+    .u{
+      background-image:url("images/d3.png");
+    }
+    .n{
+      background-image:url("images/d7.png");
+    }
+    .foot{
+      font-size:50px;
+    }
